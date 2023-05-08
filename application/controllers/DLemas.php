@@ -3,6 +3,8 @@ class DLemas extends CI_Controller
 {
  public function index()
  {
+    $data['judul'] = "Halaman Depan";
+    $this->load->view('view_header_form',$data);
     $this->load->view('view_form_dlemas');
  }
 
@@ -18,7 +20,7 @@ class DLemas extends CI_Controller
         'min_lenght' => 'NIS terlalu pendek'
     ]);
 
-    $this->form_validation->set_rules('kelas', 'Kelas', 'required|min_length[3]', [
+    $this->form_validation->set_rules('kls', 'Kelas', 'required|min_length[3]', [
         'required' => 'Kelas Harus diisi',
         'min_lenght' => 'Kelas terlalu pendek'
     ]);
@@ -39,13 +41,14 @@ class DLemas extends CI_Controller
         $data = [
             'nama' => $this->input->post('nama'),
             'nis' => $this->input->post('nis'),
-            'kelas' => $this->input->post('kelas'),
+            'kls' => $this->input->post('kls'),
             'tgllahir' => $this->input->post('tgllahir'),
             'alamat' => $this->input->post('alamat'),
-            'Jenis_kelamin' => $this->input->post('Jenis_kelamin'),
+            'Jenkel' => $this->input->post('Jenkel'),
             'agama' => $this->input->post('agama')
         ];
 
+        $this->load->view('view_header_cetak',$data);
         $this->load->view('view_data_dlemas', $data);
     }
   }

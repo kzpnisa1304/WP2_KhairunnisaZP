@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Tampil Data Siswa</title>
+    <title>D-Lemas</title>
 </head>
 
 <body>
@@ -9,7 +9,7 @@
         <table>
             <tr>
                 <th colspan="3">
-                    Tampil Data Siswa
+                    Tampilan Data Siswa
                 </th>
             </tr>
             <tr>
@@ -35,7 +35,7 @@
                 <th>Kelas</th>
                 <td>:</td>
                 <td>
-                    <?= $kelas; ?>
+                    <?= $kls; ?>
                 </td>
             </tr>
             <tr>
@@ -56,7 +56,7 @@
                 <th>Jenis Kelamin</th>
                 <td>:</td>
                 <td>
-                    <?= $Jenis_kelamin; ?>
+                    <?= $Jenkel; ?>
                 </td>
             <tr>
                 <th>Agama</th>

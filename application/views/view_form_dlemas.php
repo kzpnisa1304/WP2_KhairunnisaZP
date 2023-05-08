@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Form Input Data Siswa</title>
+    <title>D-Lemas</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                     <th>Kelas</th>
                     <td>:</td>
                     <td>
-                        <input type="text" name="kelas" id="kelas">
+                        <input type="text" name="kls" id="kls">
                     </td>
                 </tr>
                 <tr>
@@ -58,8 +58,8 @@
                     <th>Jenis Kelamin</th>
                     <td>:</td>
                     <td>
-                        <input type="radio" name="Jenis_kelamin" id="male" value="Laki-Laki"><label for="male">Laki-Laki</label><br>
-                        <input type="radio" name="Jenis_kelamin" id="female" value="Perempuan"><label for="female">Perempuan</label><br>
+                        <input type="radio" name="Jenkel" id="male" value="Laki-Laki"><label for="male">Laki-Laki</label><br>
+                        <input type="radio" name="Jenkel" id="female" value="Perempuan"><label for="female">Perempuan</label><br>
                     </td>
                 </tr>
                 <tr>
